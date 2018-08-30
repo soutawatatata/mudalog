@@ -1,0 +1,26 @@
+
+<header>
+  <ul class="header-menus">
+      <li>
+        <%= link_to("新規投稿", "/posts/index") %>
+      </li>
+  </ul>
+</header>
+
+<main>
+
+  <div class="main posts-new">
+    <div class="container">
+     <%= form_tag("/posts/index") do %>
+      <div class="kyonomuda">
+       <h1 class="muda">今日のムダ</h1>
+        <div class="form-body">
+         <textarea name="name" rows="8" cols="80"></textarea>
+         <input class="submit" type="submit" value="投稿">
+        </div>
+      </div>
+     <% end %>
+    </div>
+   </div>
+
+</main>
